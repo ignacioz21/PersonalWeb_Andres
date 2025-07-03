@@ -3,7 +3,7 @@ package com.webpage.personalWebAndres.controller;
 
 import com.webpage.personalWebAndres.domain.Categoria;
 import com.webpage.personalWebAndres.service.CategoriaService;
-import com.webpage.personalWebAndres.service.impl.FirebaseStorageServiceImpl;
+//import com.webpage.personalWebAndres.service.impl.FirebaseStorageServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,7 +32,7 @@ public class CategoriaController {
     public String categoriaNuevo(Categoria categoria) {
         return "/categoria/modifica";
     }
-
+/*
     @Autowired
     private FirebaseStorageServiceImpl firebaseStorageService;
     
@@ -50,6 +50,7 @@ public class CategoriaController {
         categoriaService.save(categoria);
         return "redirect:/categoria/listado";
     }
+*/
 
     @GetMapping("/eliminar/{idCategoria}")
     public String categoriaEliminar(Categoria categoria) {

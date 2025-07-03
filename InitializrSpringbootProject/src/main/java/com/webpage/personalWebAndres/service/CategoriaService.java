@@ -11,8 +11,9 @@ public interface CategoriaService {
     
     // Se obtiene un listado de categorias en un List
     public List<Categoria> getCategorias(boolean activos);
-    
+       
     // Se inserta un nuevo categoria si el id del categoria esta vacío
+    public Categoria getCategoria(Categoria categoria);
     // Se actualiza un categoria si el id del categoria NO esta vacío
     public void save(Categoria categoria);
     
